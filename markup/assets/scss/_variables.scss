@@ -1,0 +1,111 @@
+//## Gray and brand colors
+$gray-base:   #000;
+$gray-darker: #393939;
+$gray-dark:   #7f7e7e;
+$gray-semi:   #363636;
+$gray-light:  #f2f2f2;
+$gray-lihter: #b2b2b2;
+$gray:        #feab12;
+
+$brand-color: #f09d66;
+$brand-secondary-color: #d9bf8f;
+$brand-third-color: #feab12;
+
+
+
+// 737373 серый
+// d9bf8f серый blockqotes
+// 394948 кнопка серая
+
+//## Settings for some of the most global styles.
+$body-bg:               #fff;
+$bg-inverse:            #d9bf8f;
+$text-color:            #000;
+$link-color:            $text-color !default;
+$link-hover-color:      lighten($link-color, 10%) !default;
+$link-hover-decoration: underline !default;
+
+//## Typography
+$font-family-base:        'Lato', Arial, Helvetica, Tahoma, sans-serif;
+$font-family-secondary:	  'Playfair Display', sans-serif;
+$font-size-base:          14px;
+$font-size-md:            18px;
+$font-size-navbar:        18px;
+
+$line-height-base:        1;
+
+$headings-font-family:    $font-family-secondary;
+$headings-font-weight:    700;
+$headings-font-style:     italic;
+$headings-line-height:    1;
+$headings-color:          #000;
+
+$font-size-h1:            floor(($font-size-base * 2.143)); // ~30px
+$font-size-h2:            floor(($font-size-base * 2.0714)); // ~29px
+$font-size-h3:            ceil(($font-size-base * 1.642)); // ~23px
+$font-size-h4:            $font-size-base;
+$font-size-h5:            ceil(($font-size-base * 0.929)); // ~13px
+$font-size-h6:            ceil(($font-size-base * 0.875)) !default; // ~12px
+
+$margin-h1:               15px 0 !default;
+$margin-h2:               15px 0 !default;
+$margin-h3:               15px 0 !default;
+$margin-h4:               10px 0 !default;
+$margin-h5:               5px 0 !default;
+$margin-h6:               2px 0 !default;
+
+//## Buttons
+$btn-font-size:                  14px;
+$btn-font-weight:                700;
+$btn-border-width:               0;
+$btn-border-radius:              0 !default;
+$btn-padding-vertical:           15px;
+$btn-padding-horizontal:         15px;
+
+$btn-lg-font-size:               24px;
+$btn-lg-padding-vertical:        17px;
+$btn-lg-padding-horizontal:      25px;
+
+$btn-small-padding-vertical:     13px;
+$btn-small-padding-horizontal:   18px;
+
+
+$btn-brand-color:                #fff;
+$btn-brand-color-inverse:        #fff;
+$btn-brand-bg:                   $brand-color !default;
+$btn-brand-border:               $brand-color !default;
+
+$btn-brand-color-hover:          #fff;
+$btn-brand-bg-hover:             darken($brand-color, 10%) !default;
+$btn-brand-border-hover:         darken($brand-color, 10%) !default;
+
+$btn-link-disabled-color:        #ccc !default;
+
+// ## Forms
+$input-bg:                       transparent !default;
+$input-bg-disabled:              #ccc !default;
+$input-color:                    $gray-base;
+$input-border:                   $gray-base;
+$input-border-radius:            2px;
+$input-border-focus:             #66afe9 !default;
+$input-color-placeholder:        $gray-base;
+
+$input-height-base:              40px;
+$input-font-size:                12px;
+$input-line-height:              2.25;
+$input-border-width:             1px !default;
+$input-line-height-computed:     floor($input-font-size * $input-line-height) !default;
+
+$input-padding:                  ($input-height-base - $input-line-height-computed - $input-border-width) / 2 !default;
+$input-padding-vertical:         $input-padding !default;
+$input-padding-horizontal:       14px;
+
+$form-group-margin-bottom:       20px;
+$cursor-disabled:                not-allowed !default;
+
+// ## Forms-inverse
+$input-bg-inverse:               transparent;
+$input-bg-inverse-disabled:      $gray-darker;
+$input-color-inverse:            #6a6a6a;
+$input-border-inverse:           #484848;
+$input-color-inverse-placeholder:#6a6a6a;

@@ -1,0 +1,190 @@
+@import "variables";
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?fw0cbf');
+    src:    url('../fonts/icomoon.eot?fw0cbf#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?fw0cbf') format('truetype'),
+        url('../fonts/icomoon.woff?fw0cbf') format('woff'),
+        url('../fonts/icomoon.svg?fw0cbf#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock-o {
+    &:before {
+        content: $icon-clock-o;
+    }
+}
+.icon-plane {
+    &:before {
+        content: $icon-plane;
+    }
+}
+.icon-phone {
+    &:before {
+        content: $icon-phone;
+    }
+}
+.icon-twitter {
+    &:before {
+        content: $icon-twitter;
+    }
+}
+.icon-facebook {
+    &:before {
+        content: $icon-facebook;
+    }
+}
+.icon-facebook-f {
+    &:before {
+        content: $icon-facebook-f;
+    }
+}
+.icon-feed {
+    &:before {
+        content: $icon-feed;
+    }
+}
+.icon-rss {
+    &:before {
+        content: $icon-rss;
+    }
+}
+.icon-pinterest {
+    &:before {
+        content: $icon-pinterest;
+    }
+}
+.icon-instagram {
+    &:before {
+        content: $icon-instagram;
+    }
+}
+.icon-life-bouy {
+    &:before {
+        content: $icon-life-bouy;
+    }
+}
+.icon-life-buoy {
+    &:before {
+        content: $icon-life-buoy;
+    }
+}
+.icon-life-ring {
+    &:before {
+        content: $icon-life-ring;
+    }
+}
+.icon-life-saver {
+    &:before {
+        content: $icon-life-saver;
+    }
+}
+.icon-support {
+    &:before {
+        content: $icon-support;
+    }
+}
+.icon-cc-visa {
+    &:before {
+        content: $icon-cc-visa;
+    }
+}
+.icon-cc-mastercard {
+    &:before {
+        content: $icon-cc-mastercard;
+    }
+}
+.icon-cc-discover {
+    &:before {
+        content: $icon-cc-discover;
+    }
+}
+.icon-cc-amex {
+    &:before {
+        content: $icon-cc-amex;
+    }
+}
+.icon-chevron-down {
+    &:before {
+        content: $icon-chevron-down;
+    }
+}
+.icon-chevron-small-down {
+    &:before {
+        content: $icon-chevron-small-down;
+    }
+}
+.icon-chevron-up {
+    &:before {
+        content: $icon-chevron-up;
+    }
+}
+
+@mixin circle-variant($width, $border-radius, $border, $vertical-align){
+    width: $width;
+    height: $width;
+    border-radius: $border-radius;
+    border: $border;
+    vertical-align: $vertical-align;
+    // line-height: $width;
+}
+@mixin size-variant($font-size, $width, $display, $text-align){
+    font-size: $font-size;
+    width: $width;
+    height: $width;
+    line-height: $width;
+    display: $display;
+    text-align: $text-align;
+}
+
+.icon{
+    &-base{
+        @include size-variant(24px, 50px, inline-block, center);
+        background: #fff;
+        transition: background .3s;
+        &:hover{
+            background: transparent;
+            color: #fff;
+        }
+    }
+    &-sm{
+        @include size-variant(14px, 28px, inline-block, center);
+    }
+    &-circle{
+        @include circle-variant(50px, 50%, 2px solid transparent, middle);
+        &-sm{
+            @include circle-variant(30px, 50%, 2px solid $brand-secondary-color, middle);
+        }
+    }
+    &-outline{
+        border: 2px solid $brand-secondary-color;
+        transition: background .3s;
+        &:hover{
+            background: $brand-secondary-color;
+            color: #fff;
+        }
+        &-inverse{
+            border: 2px solid $gray-base;
+        }
+    }
+    &-brand{
+        color: $brand-secondary-color;
+    }
+}

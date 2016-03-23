@@ -7,7 +7,7 @@ $gray-light:  #f2f2f2;
 $gray-lihter: #b2b2b2;
 $gray:        #feab12;
 
-$brand-color: #f09d66;
+$brand-color: #f0975c;
 $brand-secondary-color: #d9bf8f;
 $brand-third-color: #feab12;
 
@@ -59,14 +59,19 @@ $btn-font-size:                  14px;
 $btn-font-weight:                700;
 $btn-border-width:               0;
 $btn-border-radius:              0 !default;
-$btn-padding-vertical:           15px;
-$btn-padding-horizontal:         15px;
+$btn-padding-vertical:           13px;
+$btn-padding-horizontal:         16px;
 
 $btn-lg-font-size:               24px;
-$btn-lg-padding-vertical:        17px;
-$btn-lg-padding-horizontal:      25px;
+$btn-lg-padding-vertical:        15px;
+$btn-lg-padding-horizontal:      29px;
 
-$btn-small-padding-vertical:     13px;
+$btn-md-font-size:               14px;
+$btn-md-padding-vertical:        14px;
+$btn-md-padding-horizontal:      7px;
+
+$btn-small-font-size:            12px;
+$btn-small-padding-vertical:     10px;
 $btn-small-padding-horizontal:   18px;
 
 
@@ -76,8 +81,8 @@ $btn-brand-bg:                   $brand-color !default;
 $btn-brand-border:               $brand-color !default;
 
 $btn-brand-color-hover:          #fff;
-$btn-brand-bg-hover:             darken($brand-color, 10%) !default;
-$btn-brand-border-hover:         darken($brand-color, 10%) !default;
+$btn-brand-bg-hover:             #000;
+$btn-brand-border-hover:         #000;
 
 $btn-link-disabled-color:        #ccc !default;
 

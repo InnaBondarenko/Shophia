@@ -22,7 +22,6 @@
   @if $enable-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   } @else {
     @include clearfix();
   }

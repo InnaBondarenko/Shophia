@@ -1,0 +1,149 @@
+.thumb{
+	&-holder{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: space-between;
+		&-collection{
+			padding: 9px 15px;
+			border: 1px solid #eaeaea;
+		}
+	}
+	&-handpicked{
+		position: relative;
+		flex: 0 0 0;
+		margin-bottom: 15px;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 26px;
+			right: 20px;
+			bottom: 26px;
+			left: 20px;
+			border: 2px solid white;
+			border-radius: 3px;
+			z-index: 2;
+		}
+		&:hover:before{
+			border: 0;
+			background: rgba(0,0,0,.24);
+			border-radius: 0;
+		}
+		&:hover{
+			.thumb-handpicked-img:before,
+			.thumb-handpicked-img:after{
+				opacity: 1;
+			}
+			.thumb-caption{
+				display: block;
+			}
+		}
+		&-img{
+			&:before, &:after{
+				content: '';
+				position: absolute;
+				background: $brand-secondary-color;
+				top: 50%;
+				left: 50%;
+				z-index:2;
+				opacity: 0;
+			}
+			&:before{
+				width: 60px;
+				border-top: 1px solid $brand-secondary-color;
+				transform: translateX(-50%);
+			}
+			&:after{
+				height: 60px;
+				border-left: 1px solid $brand-secondary-color;
+				transform: translateY(-50%);
+			}
+		}
+		&-desc{
+			position: absolute;
+			top: 15%;
+			left: 50%;
+			transform: translateX(-50%);
+			color: #000;
+			z-index: 1;
+		}
+		.btn{
+			position: absolute;
+			top: 75%;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 2;
+		}
+	}
+	&-caption{
+		display: none;
+	}
+	&-collection{
+		position: relative;
+		margin: 8px 0;
+		&:before{
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba(0,0,0,.55);
+			opacity: 0;
+			transition: opacity .3s;
+		}
+		&:hover:before{
+			opacity: 1;
+		}
+		&:hover .btn-trapezium{
+			&:before,
+			&:after{
+				background: $btn-brand-bg;
+			}
+		}
+		.btn-trapezium{
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.discount{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			background: $brand-third-color;
+			color: #fff;
+			font-family: $font-family-base !important;
+			line-height: 52px;
+			sup{
+				vertical-align: super;
+				font-size: 11px;
+			}
+		}
+	}
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 28%;
+	&.first{
+		width: 33%;
+	}
+}
+
+
+@media screen and (max-width: 992px){
+	.flex-column{
+		width: 100%;
+		&.first{
+	    	order: -1;
+	    	width: 100%;
+	  	}
+	}
+	img{width: 100%;}
+	.thumb-collection{
+		width: 100%;
+	}
+}

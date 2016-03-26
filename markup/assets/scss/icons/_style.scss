@@ -137,9 +137,7 @@
     }
 }
 
-@mixin circle-variant($width, $border-radius, $border, $vertical-align){
-    width: $width;
-    height: $width;
+@mixin circle-variant($border-radius, $border, $vertical-align){
     border-radius: $border-radius;
     border: $border;
     vertical-align: $vertical-align;
@@ -167,10 +165,13 @@
     &-sm{
         @include size-variant(14px, 28px, inline-block, center);
     }
+    &-lg{
+        @include size-variant(23px, 60px, inline-block, center);
+    }
     &-circle{
-        @include circle-variant(50px, 50%, 2px solid transparent, middle);
+        @include circle-variant(50%, 2px solid transparent, middle);
         &-sm{
-            @include circle-variant(30px, 50%, 2px solid $brand-secondary-color, middle);
+            @include circle-variant(50%, 2px solid $brand-secondary-color, middle);
         }
     }
     &-outline{

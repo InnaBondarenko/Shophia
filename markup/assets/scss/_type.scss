@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: $headings-font-family;
   font-weight: $headings-font-weight;
+  font-style: $headings-font-style;
   line-height: $headings-line-height;
   color: $headings-color;
 }
@@ -67,6 +68,6 @@ h6, .h6 { font-size: $font-size-h6; margin: $margin-h6; }
 }
 
 // mark{
-// 	color: $brand-color;
+// 	color: inherit;
 // 	background: transparent;
 // }

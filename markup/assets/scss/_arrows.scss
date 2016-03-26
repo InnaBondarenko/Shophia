@@ -1,0 +1,35 @@
+
+.arrow-div{
+  &-big{
+  height: 200px; 
+  background-color: #7d7773;
+  position:relative;
+  
+  &:before{
+    content: '';
+    border-left: 200px solid transparent;
+  border-right: 200px solid transparent;  
+  border-top: 65px solid white;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+  }
+}
+
+&-little{
+  height: 200px; 
+  background-color: #d9bf8f;
+  position:relative;
+
+  &:before{
+    content: '';
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;  
+   border-top: 30px solid white;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  }
+ }
+

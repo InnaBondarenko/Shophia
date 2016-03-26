@@ -1,0 +1,39 @@
+.page-header {
+    overflow: hidden;
+    margin: 15px;
+    text-align: center;
+    h1 {
+        font-size: 20px;
+        font-style: italic;
+        position: relative;
+        margin: 0 0 24px;
+        
+        display: inline-block;
+        color: black;
+        &:after,
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            border-top: 2px solid #eaeaea;
+            width: 5000px;
+
+        }
+        &:after {
+            left: 100%;
+        }
+        &:before {
+            right: 100%;
+        }
+    }
+}
+
+.diamond {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #d9bf8f;
+    width: 15px;
+    height: 15px;
+    margin: 0px 60px;
+    transform: rotate(45deg);
+}

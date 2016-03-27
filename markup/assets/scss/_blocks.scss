@@ -1,3 +1,148 @@
 .block{
 	padding: 51px 0;
+	&-intro{
+		padding: 0;
+		ul{
+			li{
+				position: relative;
+				z-index: -1;
+				&:before{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					z-index: 10;
+					background: rgba(0,0,0,.24);
+				}
+			}
+		}
+	}
+}
+
+.terms{
+	background: $brand-secondary-color;
+	position: relative;
+	color: #fff;
+	padding: 10px 0;
+	&-holder{
+		margin: 0 -15px;
+		overflow: hidden;
+	}
+	&-right{
+		position: relative;
+		.terms-content{
+			&:before{
+				content: $icon-plane;
+			}
+		}
+		@media screen and (min-width: 768px){
+			&:before, &:after{
+			    content: '';
+			    z-index: 1;
+			    position: absolute;
+			    background: $brand-secondary-color;
+			    width: 105%;
+			    height: 50%;
+			}
+			&:before{
+			    top: 0;
+			    bottom: 0;
+			    left: -14px;
+			    transform: skew(25deg);
+			}
+			&:after{
+			    top: 50%;
+			    right: -7px;
+			    transform: skew(-25deg);
+			}
+		}
+	}
+	&-center{
+		background: #000;
+		.terms-content{
+			&:before{
+				content: $icon-clock-o;
+			}
+		}
+		@media screen and (min-width: 768px){
+			&:before, &:after{
+			    content: '';
+			    z-index: 1;
+			    position: absolute;
+			    background: #000;
+			    width: 100%;
+			    height: 100%;
+			}
+			&:before{
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    transform: skew(25deg);
+			}
+			&:after{
+			    top: 0;
+			    right: 0;
+			    transform: skew(-25deg);
+			}
+		}
+	}
+	&-left{
+		.terms-content{
+			&:before{
+				content: $icon-life-bouy;
+			}
+		}
+		@media screen and (min-width: 768px){
+			&:before, &:after{
+			    content: '';
+			    z-index: 1;
+			    position: absolute;
+			    background: $brand-secondary-color;
+			    width: 105%;
+			    height: 50%;
+			}
+			&:before{
+			    top: 0;
+			    bottom: 0;
+			    right: -14px;
+			    left: auto;
+			    transform: skew(-25deg);
+			}
+			&:after{
+			    top: 50%;
+			    left: -7px;
+			    transform: skew(25deg);
+			}
+		}
+	}
+	&-content{
+		position: relative;
+		z-index: 2;
+		padding-left: 70px;
+		.h1{
+			font-family: $font-family-base;
+			font-style: normal;
+			color: #fff;
+			font-size: 25px;
+		}
+		&:before{
+			content: '';
+			font-family: 'icomoon';
+			font-size: 35px;
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translateY(-50%);
+		}
+		@media screen and (min-width: 768px){
+			.h1{
+				// font-size: ;
+			}
+			&:before{
+				font-size: 48px;
+			}
+		}
+	}
 }

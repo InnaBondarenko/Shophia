@@ -1,1 +1,0 @@
-consoleLog(1.js);

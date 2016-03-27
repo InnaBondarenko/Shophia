@@ -22,7 +22,7 @@ $body-bg:               #fff;
 $bg-inverse:            #d9bf8f;
 $text-color:            #000;
 $link-color:            $text-color !default;
-$link-hover-color:      lighten($link-color, 10%) !default;
+$link-hover-color:      $brand-secondary-color;
 $link-hover-decoration: underline !default;
 
 //## Typography

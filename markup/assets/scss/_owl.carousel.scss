@@ -237,10 +237,11 @@
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 10px; 
   position: absolute;
-  bottom: 15px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10000;
+  z-index: 10;
+  margin: 0 -14px;
 }
 .owl-theme .owl-dots {
   text-align: center;
@@ -254,7 +255,7 @@
       width: 8px;
       height: 8px;
       transform: rotate(45deg);
-      margin: 15px 5px;
+      margin: 15px 7px;
       display: block;
       -webkit-backface-visibility: visible;
       -webkit-transition: opacity 200ms ease;
@@ -266,8 +267,8 @@
       -moz-border-radius: 0px;
       border-radius: 0px; 
       @media screen and (min-width: 768px){
-        width: 15px;
-        height: 15px;
+        width: 13px;
+        height: 13px;
       }
     }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {

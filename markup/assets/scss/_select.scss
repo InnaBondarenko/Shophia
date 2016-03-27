@@ -271,6 +271,7 @@
 	text-overflow: ellipsis;
 	text-align: left;
 	text-transform: uppercase;
+
 }
 .jq-selectbox .placeholder {
 	color: #fff;
@@ -291,7 +292,7 @@
 		font-family: 'icomoon';
 	}
 	@media all and (min-width: 768px) {
-		width: 24px;
+		width: 30px;
 	}
 }
 .jq-selectbox__trigger-arrow {

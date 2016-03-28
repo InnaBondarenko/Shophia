@@ -1819,8 +1819,7 @@ h6, .h6 {
   background: #d9bf8f;
   position: relative;
   color: #fff;
-  padding: 8px 0 22px;
-  margin-right: 20px; }
+  padding: 8px 0 22px; }
   .terms-inner {
     margin: 0 -15px;
     overflow: hidden; }
@@ -1830,87 +1829,98 @@ h6, .h6 {
     position: relative; }
     .terms-right .terms-content:before {
       content: ""; }
-    @media screen and (min-width: 768px) {
-      .terms-right:before, .terms-right:after {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        background: #d9bf8f;
-        width: 105%;
-        height: 50%; }
-      .terms-right:before {
-        top: 0;
-        bottom: 0;
-        left: 2px;
-        -webkit-transform: skew(41deg);
-            -ms-transform: skew(41deg);
-                transform: skew(41deg); }
-      .terms-right:after {
-        top: 50%;
-        right: -21px;
-        -webkit-transform: skew(-41deg);
-            -ms-transform: skew(-41deg);
-                transform: skew(-41deg); } }
+    @media screen and (min-width: 769px) {
+      .terms-right {
+        margin-right: 20px; }
+        .terms-right:before, .terms-right:after {
+          content: '';
+          z-index: 1;
+          position: absolute;
+          background: #d9bf8f;
+          width: 105%;
+          height: 50%; }
+        .terms-right:before {
+          top: 0;
+          bottom: 0;
+          left: 2px;
+          -webkit-transform: skew(41deg);
+              -ms-transform: skew(41deg);
+                  transform: skew(41deg); }
+        .terms-right:after {
+          top: 50%;
+          right: -21px;
+          -webkit-transform: skew(-41deg);
+              -ms-transform: skew(-41deg);
+                  transform: skew(-41deg); } }
   .terms-center {
     background: #000; }
     .terms-center .terms-content:before {
       content: ""; }
-    @media screen and (min-width: 768px) {
-      .terms-center:before, .terms-center:after {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        background: #000;
-        width: 100%;
-        height: 100%; }
-      .terms-center:before {
-        top: 0;
-        bottom: 0;
-        left: 0;
-        -webkit-transform: skew(41deg);
-            -ms-transform: skew(41deg);
-                transform: skew(41deg); }
-      .terms-center:after {
-        top: 0;
-        right: 0;
-        -webkit-transform: skew(-41deg);
-            -ms-transform: skew(-41deg);
-                transform: skew(-41deg); } }
+    @media screen and (min-width: 769px) {
+      .terms-center .terms-content:before {
+        left: 19px; } }
+    @media screen and (min-width: 769px) {
+      .terms-center {
+        margin: 0 24px; }
+        .terms-center:before, .terms-center:after {
+          content: '';
+          z-index: 1;
+          position: absolute;
+          background: #000;
+          width: 100%;
+          height: 100%; }
+        .terms-center:before {
+          top: 0;
+          bottom: 0;
+          left: 0;
+          -webkit-transform: skew(39deg);
+              -ms-transform: skew(39deg);
+                  transform: skew(39deg); }
+        .terms-center:after {
+          top: 0;
+          right: 0;
+          -webkit-transform: skew(-39deg);
+              -ms-transform: skew(-39deg);
+                  transform: skew(-39deg); }
+        .terms-center .terms-content {
+          padding-left: 80px; } }
   .terms-left {
     margin-right: 0; }
     .terms-left .terms-content:before {
       content: ""; }
-    @media screen and (min-width: 768px) {
-      .terms-left:before, .terms-left:after {
-        content: '';
-        z-index: 1;
-        position: absolute;
-        background: #d9bf8f;
-        width: 105%;
-        height: 50%; }
-      .terms-left:before {
-        top: 0;
-        bottom: 0;
-        right: -14px;
-        left: auto;
-        -webkit-transform: skew(-25deg);
-            -ms-transform: skew(-25deg);
-                transform: skew(-25deg); }
-      .terms-left:after {
-        top: 50%;
-        left: -7px;
-        -webkit-transform: skew(25deg);
-            -ms-transform: skew(25deg);
-                transform: skew(25deg); } }
+    @media screen and (min-width: 769px) {
+      .terms-left {
+        margin-left: 20px; }
+        .terms-left:before, .terms-left:after {
+          content: '';
+          z-index: 1;
+          position: absolute;
+          background: #d9bf8f;
+          width: 105%;
+          height: 50%; }
+        .terms-left:before {
+          top: 0;
+          bottom: 0;
+          right: 3px;
+          left: auto;
+          -webkit-transform: skew(-41deg);
+              -ms-transform: skew(-41deg);
+                  transform: skew(-41deg); }
+        .terms-left:after {
+          top: 50%;
+          left: -21px;
+          -webkit-transform: skew(41deg);
+              -ms-transform: skew(41deg);
+                  transform: skew(41deg); } }
   .terms-content {
     position: relative;
     z-index: 2;
-    padding-left: 102px; }
+    padding-left: 80px; }
     .terms-content .h1 {
       font-family: "Lato", Arial, Helvetica, Tahoma, sans-serif;
       font-style: normal;
       color: #fff;
-      font-size: 25px; }
+      font-size: 20px; }
     .terms-content:before {
       content: '';
       font-family: 'icomoon';
@@ -1921,12 +1931,21 @@ h6, .h6 {
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%); }
-    @media screen and (min-width: 768px) {
-      .terms-content .h1 {
-        font-size: 30px;
-        margin-bottom: 11px; }
-      .terms-content:before {
-        font-size: 48px; } }
+    @media screen and (min-width: 480px) {
+      .terms-content {
+        padding-left: 120px; }
+        .terms-content .h1 {
+          font-size: 30px; }
+        .terms-content:before {
+          font-size: 48px; } }
+    @media screen and (min-width: 769px) {
+      .terms-content {
+        padding-left: 102px; }
+        .terms-content .h1 {
+          font-size: 30px;
+          margin-bottom: 11px; }
+        .terms-content:before {
+          font-size: 48px; } }
 
 .btn {
   display: inline-block;

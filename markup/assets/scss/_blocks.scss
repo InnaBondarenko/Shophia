@@ -23,13 +23,11 @@
 		padding: 66px 0 0;
 	}
 }
-
 .terms{
 	background: $brand-secondary-color;
 	position: relative;
 	color: #fff;
 	padding: 8px 0 22px;
-	margin-right: 20px;
 	&-inner{
 		margin: 0 -15px;
 		overflow: hidden;
@@ -44,7 +42,8 @@
 				content: $icon-plane;
 			}
 		}
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 769px){
+			margin-right: 20px;
 			&:before, &:after{
 			    content: '';
 			    z-index: 1;
@@ -72,8 +71,14 @@
 			&:before{
 				content: $icon-clock-o;
 			}
+			@media screen and (min-width: 769px){
+				&:before{
+					left: 19px;
+				}
+			}
 		}
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 769px){
+			margin: 0 24px;
 			&:before, &:after{
 			    content: '';
 			    z-index: 1;
@@ -86,12 +91,15 @@
 			    top: 0;
 			    bottom: 0;
 			    left: 0;
-			    transform: skew(41deg);
+			    transform: skew(39deg);
 			}
 			&:after{
 			    top: 0;
 			    right: 0;
-			    transform: skew(-41deg);
+			    transform: skew(-39deg);
+			}
+			.terms-content{
+				padding-left: 80px;
 			}
 		}
 	}
@@ -102,7 +110,8 @@
 				content: $icon-life-bouy;
 			}
 		}
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 769px){
+			margin-left: 20px;
 			&:before, &:after{
 			    content: '';
 			    z-index: 1;
@@ -114,26 +123,26 @@
 			&:before{
 			    top: 0;
 			    bottom: 0;
-			    right: -14px;
+			    right: 3px;
 			    left: auto;
-			    transform: skew(-25deg);
+			    transform: skew(-41deg);
 			}
 			&:after{
 			    top: 50%;
-			    left: -7px;
-			    transform: skew(25deg);
+			    left: -21px;
+			    transform: skew(41deg);
 			}
 		}
 	}
 	&-content{
 		position: relative;
 		z-index: 2;
-		padding-left: 102px;
+		padding-left: 80px;
 		.h1{
 			font-family: $font-family-base;
 			font-style: normal;
 			color: #fff;
-			font-size: 25px;
+			font-size: 20px;
 		}
 		&:before{
 			content: '';
@@ -144,7 +153,17 @@
 			left: 33px;
 			transform: translateY(-50%);
 		}
-		@media screen and (min-width: 768px){
+		@media screen and (min-width: 480px){
+			padding-left: 120px;
+			.h1{
+				font-size: 30px;
+			}
+			&:before{
+				font-size: 48px;
+			}
+		}
+		@media screen and (min-width: 769px){
+			padding-left: 102px;
 			.h1{
 				font-size: 30px;
 				margin-bottom: 11px;

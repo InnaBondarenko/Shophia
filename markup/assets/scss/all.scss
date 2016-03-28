@@ -17,13 +17,15 @@
 @import 'arrows';
 @import 'select';
 @import 'owl.carousel';
+@import 'footer';
+@import 'forms';
 
 
 
 
 .pp {
     position: absolute;
-    top: -4px;
+    top: -754px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events:none;

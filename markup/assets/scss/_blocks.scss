@@ -1,5 +1,5 @@
 .block{
-	padding: 51px 0;
+	padding: 46px 0 39px;
 	&-intro{
 		padding: 0;
 		ul{
@@ -20,7 +20,10 @@
 		}
 	}
 	&-terms{
-		padding: 66px 0 0;
+		padding: 66px 0 54px;
+	}
+	&-brand{
+		padding-top: 72px;
 	}
 }
 .terms{

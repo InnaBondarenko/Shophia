@@ -97,7 +97,7 @@ a.btn {
     height: auto;
     min-width: 146px;
     padding: 0 22px;
-    // margin: 0 22px;
+    margin-left: -13px;
     &:before,
   	&:after {
 		content: '';
@@ -110,12 +110,12 @@ a.btn {
 		background-color: #000;
 	}
 	&:before {
-		transform: skew(25deg);
-		left: 11px;
+		transform: skew(43deg);
+		left: 21px;
 	}
 	&:after {
-		transform: skew(-25deg);
-		right: 11px;
+		transform: skew(-43deg);
+		right: 20px;
 		left: auto;
 	}
 	&:hover:before,

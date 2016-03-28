@@ -21,7 +21,7 @@
 			right: 20px;
 			bottom: 26px;
 			left: 20px;
-			border: 2px solid white;
+			border: 3px solid white;
 			border-radius: 3px;
 			z-index: 2;
 		}
@@ -48,6 +48,7 @@
 				left: 50%;
 				z-index:2;
 				opacity: 0;
+				margin: -9px -2px;
 			}
 			&:before{
 				width: 60px;
@@ -62,11 +63,17 @@
 		}
 		&-desc{
 			position: absolute;
-			top: 15%;
+			top: 10%;
 			left: 50%;
 			transform: translateX(-50%);
 			color: #000;
 			z-index: 1;
+			font-weight: 700;
+			h3, .h3{
+				font-family: $font-family-base;
+				font-style: normal;
+				margin-bottom: 12px;
+			}
 		}
 		.btn{
 			position: absolute;
@@ -74,6 +81,17 @@
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 2;
+			margin-left: -8px;
+		}
+		&-right{
+			.thumb-handpicked-desc{
+				font-size: 50px;
+				top: 34%;
+				.text-lg{
+					font-size: 60px;
+					line-height: .7;
+				}
+			}
 		}
 	}
 	&-caption{
@@ -127,9 +145,22 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 28%;
+	width: 30.5%;
 	&.first{
-		width: 33%;
+		width: 36%;
+		.thumb-handpicked-desc{
+			top: 33%;
+		    left: 59px;
+		    transform: translateX(0);
+		    color: #fff;
+		    font-size: 36px;
+		    h3, .h3{
+		    	font-family: $font-family-secondary;
+		    	font-style: italic;
+		    	font-size: 24px;
+		    	margin-bottom: 22px;
+		    }
+		}
 	}
 }
 

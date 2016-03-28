@@ -141,6 +141,13 @@ h6, .h6 {
 .text-inverse {
   color: #fff; }
 
+mark {
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+  background: transparent;
+  color: #fff;
+  font-weight: 400; }
+
 .hidden-xs-up {
   display: none !important; }
 
@@ -1792,12 +1799,12 @@ h6, .h6 {
     text-decoration: none;
     color: #000; }
   .list-social li + li {
-    margin-left: 15px; }
+    margin-left: 16px; }
   .list-social-sm li + li {
     margin-left: 15px; }
 
 .block {
-  padding: 51px 0; }
+  padding: 46px 0 39px; }
   .block-intro {
     padding: 0; }
     .block-intro ul li {
@@ -1813,7 +1820,9 @@ h6, .h6 {
         z-index: 10;
         background: rgba(0, 0, 0, 0.24); }
   .block-terms {
-    padding: 66px 0 0; }
+    padding: 66px 0 54px; }
+  .block-brand {
+    padding-top: 72px; }
 
 .terms {
   background: #d9bf8f;
@@ -2017,7 +2026,8 @@ fieldset[disabled] a.btn {
   position: relative;
   height: auto;
   min-width: 146px;
-  padding: 0 22px; }
+  padding: 0 22px;
+  margin-left: -13px; }
   .btn-trapezium:before, .btn-trapezium:after {
     content: '';
     position: absolute;
@@ -2028,15 +2038,15 @@ fieldset[disabled] a.btn {
     z-index: -1;
     background-color: #000; }
   .btn-trapezium:before {
-    -webkit-transform: skew(25deg);
-        -ms-transform: skew(25deg);
-            transform: skew(25deg);
-    left: 11px; }
+    -webkit-transform: skew(43deg);
+        -ms-transform: skew(43deg);
+            transform: skew(43deg);
+    left: 21px; }
   .btn-trapezium:after {
-    -webkit-transform: skew(-25deg);
-        -ms-transform: skew(-25deg);
-            transform: skew(-25deg);
-    right: 11px;
+    -webkit-transform: skew(-43deg);
+        -ms-transform: skew(-43deg);
+            transform: skew(-43deg);
+    right: 20px;
     left: auto; }
   .btn-trapezium:hover:before, .btn-trapezium:hover:after {
     background: #f0975c; }
@@ -2124,7 +2134,7 @@ input[type="button"].btn--block {
     right: 20px;
     bottom: 26px;
     left: 20px;
-    border: 2px solid white;
+    border: 3px solid white;
     border-radius: 3px;
     z-index: 2; }
   .thumb-handpicked:hover:before {
@@ -2143,7 +2153,8 @@ input[type="button"].btn--block {
     top: 50%;
     left: 50%;
     z-index: 2;
-    opacity: 0; }
+    opacity: 0;
+    margin: -9px -2px; }
   .thumb-handpicked-img:before {
     width: 60px;
     border-top: 1px solid #d9bf8f;
@@ -2158,13 +2169,18 @@ input[type="button"].btn--block {
             transform: translateY(-50%); }
   .thumb-handpicked-desc {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 50%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
     color: #000;
-    z-index: 1; }
+    z-index: 1;
+    font-weight: 700; }
+    .thumb-handpicked-desc h3, .thumb-handpicked-desc .h3 {
+      font-family: "Lato", Arial, Helvetica, Tahoma, sans-serif;
+      font-style: normal;
+      margin-bottom: 12px; }
   .thumb-handpicked .btn {
     position: absolute;
     top: 75%;
@@ -2172,7 +2188,14 @@ input[type="button"].btn--block {
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
-    z-index: 2; }
+    z-index: 2;
+    margin-left: -8px; }
+  .thumb-handpicked-right .thumb-handpicked-desc {
+    font-size: 50px;
+    top: 34%; }
+    .thumb-handpicked-right .thumb-handpicked-desc .text-lg {
+      font-size: 60px;
+      line-height: .7; }
 
 .thumb-caption {
   display: none; }
@@ -2223,9 +2246,22 @@ input[type="button"].btn--block {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 28%; }
+  width: 30.5%; }
   .flex-column.first {
-    width: 33%; }
+    width: 36%; }
+    .flex-column.first .thumb-handpicked-desc {
+      top: 33%;
+      left: 59px;
+      -webkit-transform: translateX(0);
+          -ms-transform: translateX(0);
+              transform: translateX(0);
+      color: #fff;
+      font-size: 36px; }
+      .flex-column.first .thumb-handpicked-desc h3, .flex-column.first .thumb-handpicked-desc .h3 {
+        font-family: "Playfair Display", sans-serif;
+        font-style: italic;
+        font-size: 24px;
+        margin-bottom: 22px; }
 
 @media screen and (max-width: 992px) {
   .flex-column {
@@ -2242,7 +2278,7 @@ input[type="button"].btn--block {
 
 .page-header {
   overflow: hidden;
-  margin: 15px 0;
+  margin: 0 0 41px;
   text-align: center; }
   .page-header h1, .page-header .h1 {
     position: relative;
@@ -3228,9 +3264,54 @@ input[type='submit'].styler[disabled] {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #000; }
 
+.footer {
+  background: #141414;
+  color: #fff;
+  padding: 58px 0; }
+  .footer-holder {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .footer-column {
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%; }
+    .footer-column + .footer-column {
+      padding-left: 149px; }
+    .footer-column:last-child h4 {
+      margin-bottom: 47px; }
+  .footer-inner h4 {
+    color: #fff;
+    font-family: "Lato", Arial, Helvetica, Tahoma, sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 44px; }
+  .footer-inner > ul > li > a {
+    display: inline-block;
+    padding: 8px 0;
+    color: #737373; }
+  .footer-social {
+    margin-bottom: 49px; }
+
 .pp {
   position: absolute;
-  top: -4px;
+  top: -754px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);

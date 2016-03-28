@@ -67,7 +67,10 @@ h6, .h6 { font-size: $font-size-h6; margin: $margin-h6; }
 	color: #fff;
 }
 
-// mark{
-// 	color: inherit;
-// 	background: transparent;
-// }
+mark{
+	font-family: $font-family-secondary;
+	font-style: italic;
+	background: transparent;
+	color: #fff;
+	font-weight: 400;
+}

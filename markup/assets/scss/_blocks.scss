@@ -1,176 +1,188 @@
-.block{
-	padding: 51px 0;
-	&-intro{
-		padding: 0;
-		ul{
-			li{
-				position: relative;
-				z-index: -1;
-				&:before{
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					z-index: 10;
-					background: rgba(0,0,0,.24);
-				}
-			}
-		}
-	}
-	&-terms{
-		padding: 66px 0 0;
-	}
+.block {
+    padding: 51px 0;
+    &-intro {
+        padding: 0;
+        ul {
+            li {
+                position: relative;
+                z-index: -1;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 10;
+                    background: rgba(0, 0, 0, .24);
+                }
+            }
+        }
+    }
+    &-terms {
+        padding: 66px 0 0;
+    }
+    &-logos {
+        position: relative;
+    }
+    &-blockquote {
+        background: #d9bf8f;
+        position: relative;
+        margin-top: 65px;
+    }
 }
-.terms{
-	background: $brand-secondary-color;
-	position: relative;
-	color: #fff;
-	padding: 8px 0 22px;
-	&-inner{
-		margin: 0 -15px;
-		overflow: hidden;
-	}
-	&-holder{
-		padding: 0 15px;
-	}
-	&-right{
-		position: relative;
-		.terms-content{
-			&:before{
-				content: $icon-plane;
-			}
-		}
-		@media screen and (min-width: 769px){
-			margin-right: 20px;
-			&:before, &:after{
-			    content: '';
-			    z-index: 1;
-			    position: absolute;
-			    background: $brand-secondary-color;
-			    width: 105%;
-			    height: 50%;
-			}
-			&:before{
-			    top: 0;
-			    bottom: 0;
-			    left: 2px;
-			    transform: skew(41deg);
-			}
-			&:after{
-			    top: 50%;
-			    right: -21px;
-			    transform: skew(-41deg);
-			}
-		}
-	}
-	&-center{
-		background: #000;
-		.terms-content{
-			&:before{
-				content: $icon-clock-o;
-			}
-			@media screen and (min-width: 769px){
-				&:before{
-					left: 19px;
-				}
-			}
-		}
-		@media screen and (min-width: 769px){
-			margin: 0 24px;
-			&:before, &:after{
-			    content: '';
-			    z-index: 1;
-			    position: absolute;
-			    background: #000;
-			    width: 100%;
-			    height: 100%;
-			}
-			&:before{
-			    top: 0;
-			    bottom: 0;
-			    left: 0;
-			    transform: skew(39deg);
-			}
-			&:after{
-			    top: 0;
-			    right: 0;
-			    transform: skew(-39deg);
-			}
-			.terms-content{
-				padding-left: 80px;
-			}
-		}
-	}
-	&-left{
-		margin-right: 0;
-		.terms-content{
-			&:before{
-				content: $icon-life-bouy;
-			}
-		}
-		@media screen and (min-width: 769px){
-			margin-left: 20px;
-			&:before, &:after{
-			    content: '';
-			    z-index: 1;
-			    position: absolute;
-			    background: $brand-secondary-color;
-			    width: 105%;
-			    height: 50%;
-			}
-			&:before{
-			    top: 0;
-			    bottom: 0;
-			    right: 3px;
-			    left: auto;
-			    transform: skew(-41deg);
-			}
-			&:after{
-			    top: 50%;
-			    left: -21px;
-			    transform: skew(41deg);
-			}
-		}
-	}
-	&-content{
-		position: relative;
-		z-index: 2;
-		padding-left: 80px;
-		.h1{
-			font-family: $font-family-base;
-			font-style: normal;
-			color: #fff;
-			font-size: 20px;
-		}
-		&:before{
-			content: '';
-			font-family: 'icomoon';
-			font-size: 35px;
-			position: absolute;
-			top: 50%;
-			left: 33px;
-			transform: translateY(-50%);
-		}
-		@media screen and (min-width: 480px){
-			padding-left: 120px;
-			.h1{
-				font-size: 30px;
-			}
-			&:before{
-				font-size: 48px;
-			}
-		}
-		@media screen and (min-width: 769px){
-			padding-left: 102px;
-			.h1{
-				font-size: 30px;
-				margin-bottom: 11px;
-			}
-			&:before{
-				font-size: 48px;
-			}
-		}
-	}
+
+.terms {
+    background: $brand-secondary-color;
+    position: relative;
+    color: #fff;
+    padding: 8px 0 22px;
+    &-inner {
+        margin: 0 -15px;
+        overflow: hidden;
+    }
+    &-holder {
+        padding: 0 15px;
+    }
+    &-right {
+        position: relative;
+        .terms-content {
+            &:before {
+                content: $icon-plane;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            margin-right: 20px;
+            &:before,
+            &:after {
+                content: '';
+                z-index: 1;
+                position: absolute;
+                background: $brand-secondary-color;
+                width: 105%;
+                height: 50%;
+            }
+            &:before {
+                top: 0;
+                bottom: 0;
+                left: 2px;
+                transform: skew(41deg);
+            }
+            &:after {
+                top: 50%;
+                right: -21px;
+                transform: skew(-41deg);
+            }
+        }
+    }
+    &-center {
+        background: #000;
+        .terms-content {
+            &:before {
+                content: $icon-clock-o;
+            }
+            @media screen and (min-width: 769px) {
+                &:before {
+                    left: 19px;
+                }
+            }
+        }
+        @media screen and (min-width: 769px) {
+            margin: 0 24px;
+            &:before,
+            &:after {
+                content: '';
+                z-index: 1;
+                position: absolute;
+                background: #000;
+                width: 100%;
+                height: 100%;
+            }
+            &:before {
+                top: 0;
+                bottom: 0;
+                left: 0;
+                transform: skew(39deg);
+            }
+            &:after {
+                top: 0;
+                right: 0;
+                transform: skew(-39deg);
+            }
+            .terms-content {
+                padding-left: 80px;
+            }
+        }
+    }
+    &-left {
+        margin-right: 0;
+        .terms-content {
+            &:before {
+                content: $icon-life-bouy;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            margin-left: 20px;
+            &:before,
+            &:after {
+                content: '';
+                z-index: 1;
+                position: absolute;
+                background: $brand-secondary-color;
+                width: 105%;
+                height: 50%;
+            }
+            &:before {
+                top: 0;
+                bottom: 0;
+                right: 3px;
+                left: auto;
+                transform: skew(-41deg);
+            }
+            &:after {
+                top: 50%;
+                left: -21px;
+                transform: skew(41deg);
+            }
+        }
+    }
+    &-content {
+        position: relative;
+        z-index: 2;
+        padding-left: 80px;
+        .h1 {
+            font-family: $font-family-base;
+            font-style: normal;
+            color: #fff;
+            font-size: 20px;
+        }
+        &:before {
+            content: '';
+            font-family: 'icomoon';
+            font-size: 35px;
+            position: absolute;
+            top: 50%;
+            left: 33px;
+            transform: translateY(-50%);
+        }
+        @media screen and (min-width: 480px) {
+            padding-left: 120px;
+            .h1 {
+                font-size: 30px;
+            }
+            &:before {
+                font-size: 48px;
+            }
+        }
+        @media screen and (min-width: 769px) {
+            padding-left: 102px;
+            .h1 {
+                font-size: 30px;
+                margin-bottom: 11px;
+            }
+            &:before {
+                font-size: 48px;
+            }
+        }
+    }
 }

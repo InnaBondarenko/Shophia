@@ -1814,6 +1814,12 @@ h6, .h6 {
         background: rgba(0, 0, 0, 0.24); }
   .block-terms {
     padding: 66px 0 0; }
+  .block-logos {
+    position: relative; }
+  .block-blockquote {
+    background: #d9bf8f;
+    position: relative;
+    margin-top: 65px; }
 
 .terms {
   background: #d9bf8f;
@@ -3227,6 +3233,80 @@ input[type='submit'].styler[disabled] {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #000; }
+
+.logos {
+  margin: 150px 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px; }
+
+.blockquote {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff; }
+  .blockquote blockquote {
+    margin-top: 70px; }
+  .blockquote h2 {
+    color: #000; }
+  .blockquote-left {
+    text-align: left; }
+    .blockquote-left p {
+      font-size: 18px;
+      line-height: 30px;
+      font-style: italic;
+      font-family: "Playfair Display", sans-serif; }
+    .blockquote-left img {
+      float: left; }
+    .blockquote-left footer {
+      margin-top: 75px; }
+      .blockquote-left footer p {
+        color: #7f7e7e;
+        font-size: 14px;
+        font-style: normal;
+        font-family: "Lato", Arial, Helvetica, Tahoma, sans-serif; }
+  .blockquote-right {
+    padding: 50px 50px;
+    text-align: right; }
+    .blockquote-right p {
+      font-size: 18px;
+      line-height: 30px;
+      font-style: italic;
+      font-family: "Playfair Display", sans-serif; }
+    .blockquote-right img {
+      float: right; }
+    .blockquote-right footer {
+      margin-top: 75px; }
+      .blockquote-right footer p {
+        color: #7f7e7e;
+        font-size: 14px;
+        font-style: normal;
+        font-family: "Lato", Arial, Helvetica, Tahoma, sans-serif; }
 
 .pp {
   position: absolute;

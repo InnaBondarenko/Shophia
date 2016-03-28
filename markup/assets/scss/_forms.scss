@@ -112,6 +112,7 @@ input[type="search"] {
 .form {
   &__group {
     margin-bottom: $form-group-margin-bottom;
+    position: relative;
   }
   &__control {
     font-family: $font-family-base;
@@ -119,7 +120,7 @@ input[type="search"] {
     display: block;
     width: 100%;
     height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
-    padding: $input-padding-vertical $input-padding-horizontal;
+    // padding: $input-padding-vertical $input-padding-horizontal;
     font-size: $input-font-size;
     line-height: $input-line-height;
     color: $input-color;

@@ -5,7 +5,7 @@ $gray-dark:   #7f7e7e;
 $gray-semi:   #363636;
 $gray-light:  #f2f2f2;
 $gray-lihter: #b2b2b2;
-// $gray:        #feab12;
+$gray:        #484848;
 
 $brand-color: #f0975c;
 $brand-secondary-color: #d9bf8f;
@@ -70,8 +70,8 @@ $btn-md-font-size:               14px;
 $btn-md-padding-vertical:        14px;
 $btn-md-padding-horizontal:      7px;
 
-$btn-small-font-size:            12px;
-$btn-small-padding-vertical:     10px;
+$btn-small-font-size:            11px;
+$btn-small-padding-vertical:     11px;
 $btn-small-padding-horizontal:   18px;
 
 
@@ -89,13 +89,13 @@ $btn-link-disabled-color:        #ccc !default;
 // ## Forms
 $input-bg:                       transparent !default;
 $input-bg-disabled:              #ccc !default;
-$input-color:                    $gray-base;
-$input-border:                   $gray-base;
+$input-color:                    $gray;
+$input-border:                   $gray;
 $input-border-radius:            2px;
 $input-border-focus:             #66afe9 !default;
-$input-color-placeholder:        $gray-base;
+$input-color-placeholder:        $gray;
 
-$input-height-base:              40px;
+$input-height-base:              42px;
 $input-font-size:                12px;
 $input-line-height:              2.25;
 $input-border-width:             1px !default;

@@ -19,13 +19,13 @@
 @import 'owl.carousel';
 @import 'footer';
 @import 'forms';
-
-
+@import 'logos';
+@import 'blockquote';
 
 
 .pp {
     position: absolute;
-    top: -754px;
+    top: 1px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events:none;

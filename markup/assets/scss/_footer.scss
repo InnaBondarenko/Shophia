@@ -19,11 +19,6 @@
 		+ .footer-column{
 			padding-left: 149px;
 		}
-		&:last-child{
-			h4{
-				margin-bottom: 47px;
-			}
-		}
 	}
 	&-inner{
 		h4{
@@ -43,7 +38,29 @@
 			}
 		}
 	}
-	&-social{
-		margin-bottom: 49px;
+	&-connect{
+		margin-bottom: 47px;
+		.footer-social{
+			margin-bottom: 49px;
+			h4{
+				margin-bottom: 47px;
+			}
+		}
+		h4{
+			margin-bottom: 55px;
+		}
+	}
+}
+.form{
+	&__group{
+		width: 108%;
+		.btn{
+			position: absolute;
+			top: 4px;
+			right: 4px;
+		}
+	}
+	&__control{
+		padding: 7px 115px 7px 21px;
 	}
 }

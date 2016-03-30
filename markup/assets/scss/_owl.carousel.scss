@@ -237,11 +237,15 @@
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: 10px; 
   position: absolute;
-  bottom: 16px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  margin: 0 -14px;
+  margin: 0;
+  @media screen and (min-width: 480px) {
+    bottom: 16px;
+    margin: 0 -14px;
+  }
 }
 .owl-theme .owl-dots {
   text-align: center;

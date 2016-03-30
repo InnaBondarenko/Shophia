@@ -7,7 +7,10 @@
 		justify-content: flex-end;
 		.phone{
 			font-size: 9px;
-			padding-left: 8px;
+			padding-left: 0;
+			@media screen and (min-width: 480px){
+				padding-left: 8px;
+			}
 			&:before{
 				content: $icon-phone;
 				font-size: 11px;
@@ -194,6 +197,7 @@
 			}
 			.jq-selectbox{
 				order: 0;
+				margin-left: 30px;
 			}
 			.logo{
 				order: 0;

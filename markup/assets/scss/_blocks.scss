@@ -27,9 +27,12 @@
 		position: relative;
 	}
 	&-blockquote {
-		background: #d9bf8f;
-		position: relative;
-		margin-top: 65px;
+		padding: 0;
+		&-holder{
+			background: #d9bf8f;
+			position: relative;
+			padding-bottom: 15px;
+		}
 	}
 }
 .terms {

@@ -6,8 +6,11 @@
 		padding: 0;
 		list-style: none;
 		font-size: 0;
-		display: inline-flex;
+		display: none;
 		margin-right: 20px;
+		@media screen and (min-width: 480px){
+			display: inline-flex;
+		}
 		li{
 			a{
 				text-decoration: none;
@@ -19,7 +22,33 @@
 		}
 		&-sm{
 			li + li{
+				margin-left: 12px;
+			}
+		}
+		&-footer{
+			display: inline-flex;
+			li + li{
 				margin-left: 15px;
+			}
+			@media screen and (min-width: 480px){
+				display: none;
+			}
+		}
+	}
+	&-pay{
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		li{
+			a{
+				color: $gray-semi;
+				font-size: 21px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			+ li{
+				margin-left: 21px;
 			}
 		}
 	}

@@ -155,7 +155,6 @@
 .icon{
     &-base{
         @include size-variant(24px, 50px, inline-block, center);
-        background: #fff;
         transition: background .3s;
         &:hover{
             background: transparent;
@@ -163,13 +162,14 @@
         }
     }
     &-sm{
-        @include size-variant(14px, 28px, inline-block, center);
+        @include size-variant(14px, 35px, inline-block, center);
     }
     &-lg{
         @include size-variant(23px, 60px, inline-block, center);
     }
     &-circle{
         @include circle-variant(50%, 2px solid transparent, middle);
+        background: #fff;
         &-sm{
             @include circle-variant(50%, 2px solid $brand-secondary-color, middle);
         }

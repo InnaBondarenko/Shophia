@@ -154,7 +154,7 @@
 
 .icon{
     &-base{
-        @include size-variant(24px, 50px, inline-block, center);
+        @include size-variant(24px, 48px, inline-block, center);
         transition: background .3s;
         &:hover{
             background: transparent;

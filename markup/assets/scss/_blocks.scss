@@ -2,6 +2,8 @@
 	padding: 46px 0 39px;
 	&-intro{
 		padding: 0;
+		position: relative;
+		width: 100%;
 		ul{
 			li{
 				position: relative;
@@ -15,6 +17,155 @@
 					height: 100%;
 					z-index: 10;
 					background: rgba(0,0,0,.24);
+				}
+			}
+		}
+		.slider{
+			&-content{
+				position: absolute;
+				top: 14%;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: 10;
+				text-align: center;
+				width: 46%;
+				.btn{
+					display: none;
+				}
+				@media screen and (min-width: 480px) {
+					top: 14%;
+					width: auto;
+					.btn{
+						display: block;
+						width: 69%;
+						margin: 0 auto;
+					}
+				}
+				@media screen and (min-width: 769px) {
+					top: 20.5%;
+				}
+			}
+			&-info{
+				border: 3px solid #fff;
+				border-radius: 2px;
+				position: relative;
+				padding: 11px;
+				text-transform: uppercase;
+				margin-bottom:25px;
+				@media screen and (min-width: 480px) {
+					padding: 25px;
+					margin-bottom: 15px;
+					padding: 25px;
+				}
+				@media screen and (min-width: 769px) {
+					padding: 31px 35px 33px;
+					margin-bottom: 52px;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					top: 6px;
+					right: 6px;
+					bottom: 6px;
+					left: 6px;
+					border: 1px solid #fff;
+					border-radius: 2px;
+				}
+				.desc{
+					color: #fff;
+					font-size: 9px;
+					padding: 0 11px;
+					@media screen and (min-width: 480px) {
+						font-size: 16px;
+					}
+					@media screen and (min-width: 769px) {
+						font-size: 19px;
+					}
+				}
+				.advert{
+					font-size: 25px;
+					margin: 4px 0;
+					@media screen and (min-width: 480px) {
+						font-size: 45px;
+						margin: 9px 0;
+					}
+					@media screen and (min-width: 769px) {
+						font-size: 59px;
+						margin: 23px 0 20px;
+					}
+				}
+				.discount{
+					font-size: 16px;
+					font-weight: 700;
+					small{
+						font-size: 12px;
+					}
+					@media screen and (min-width: 480px) {
+						font-size: 27px;
+						small{
+							font-size: 23px;
+						}
+					}
+					@media screen and (min-width: 769px) {
+						font-size: 31px;
+						small{
+							font-size: 23px;
+						}
+					}
+				}
+				.divider{
+					position: relative;
+				    min-width: 10px;
+				    height: 9px;
+				    background: transparent;
+				    border-top: 1px solid #fff;
+				    border-bottom: 1px solid #fff;
+				    margin-left: 12px;
+				    &:before {
+						content: '';
+						position: absolute;
+						top: -1px;
+						left: 0;
+						width: 100%;
+						bottom: -1px;
+						z-index: -1;
+						background: transparent;
+						border-top: 1px solid #fff;
+						border-bottom: 1px solid #fff;
+						transform: skew(-46deg);
+						right: 5px;
+						left:  auto;
+					}
+					@media screen and (min-width: 480px) {
+						min-width: 24px;
+						margin-left: 29px;
+						&:before{
+							transform: skew(-69deg);
+							right: 13px;
+						}
+					}
+					&-right{
+						transform: scale(-1,1);
+						margin-left: 0;
+						margin-right: 12px;
+						@media screen and (min-width: 480px) {
+							margin-right: 29px;
+						}
+					}
+					&-holder{
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: center;
+						align-items: center;
+						margin-bottom: 4px;
+						@media screen and (min-width: 480px) {
+							margin-bottom: 12px;
+						}
+						@media screen and (min-width: 769px) {
+							margin-bottom: 19px;
+						}
+					}
 				}
 			}
 		}

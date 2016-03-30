@@ -86,10 +86,34 @@
 		padding-top: 27px;
 		font-size: 11px;
 		color: $gray-semi;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 		p{
 			line-height: 1.65;
 			margin-bottom: 25px;
 		}
+
+	}
+}
+.anchor{
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	background: rgba(0,0,0,.56);
+	color: #fff;
+	display: inline-block;
+	font-size: 30px;
+	position: relative;
+	.icon{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	&:hover{
+		text-decoration: none;
 	}
 }
 .form{

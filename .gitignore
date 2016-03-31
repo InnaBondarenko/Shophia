@@ -1,5 +1,5 @@
-node_modules
-input
-markup
+node_modules/
+input/
+markup/
 gulpfile.js
 package.json

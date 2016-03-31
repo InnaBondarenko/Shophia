@@ -4,3 +4,4 @@ markup/
 gulpfile.js
 package.json
 /ui.html
+.gitignore

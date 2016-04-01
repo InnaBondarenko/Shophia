@@ -1,0 +1,55 @@
+@import "icons/style";
+
+.list{
+	&-social{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		font-size: 0;
+		display: none;
+		margin-right: 20px;
+		@media screen and (min-width: 480px){
+			display: inline-flex;
+		}
+		li{
+			a{
+				text-decoration: none;
+				color: #000;
+			}
+			+ li {
+				margin-left: 16px;
+			}
+		}
+		&-sm{
+			li + li{
+				margin-left: 12px;
+			}
+		}
+		&-footer{
+			display: inline-flex;
+			li + li{
+				margin-left: 15px;
+			}
+			@media screen and (min-width: 480px){
+				display: none;
+			}
+		}
+	}
+	&-pay{
+		display: inline-flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		li{
+			a{
+				color: $gray-semi;
+				font-size: 21px;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			+ li{
+				margin-left: 21px;
+			}
+		}
+	}
+}
